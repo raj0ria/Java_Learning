@@ -1,0 +1,8 @@
+What it is?
+LSP states that objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program.
+
+Why it is used?
+It ensures that a subclass can stand in for its superclass without causing unexpected behavior.
+
+How it helps?
+It helps in maintaining the integrity of the system by ensuring that subclasses are substitutable for their base classes.

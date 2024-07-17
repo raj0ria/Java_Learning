@@ -9,7 +9,7 @@ package SOLID.S;
 public class UserService_Not {
 
     public void registerUser(String userName, String password) {
-        savetoDatabase(userName, password);
+        saveToDatabase(userName, password);
         sendWelcomeEmail(userName);
     }
 

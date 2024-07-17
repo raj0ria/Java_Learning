@@ -12,25 +12,25 @@ public class NotificationService {
         this.notification = notification;
     }
 
-    public void sendNotification(String message) {
-        notification.send(message);
+    public void sendNotification(String username) {
+        notification.send(username);
     }
 }
 
 interface Notification {
-    void send(String message);
+    void send(String username);
 }
 
 class EmailNotification implements Notification {
     @Override
-    public void send(String message) {
+    public void send(String username) {
         //logic
     }
 }
 
 class SMSNotification implements Notification {
     @Override
-    public void send(String message) {
+    public void send(String username) {
         //logic
     }
 }
