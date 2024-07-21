@@ -1,0 +1,17 @@
+Dependency Inversion Principle (DIP)
+
+What it is?
+The Dependency Inversion Principle states that:
+
+High-level modules should not depend on low-level modules. Both should depend on abstractions.
+Abstractions should not depend on details. Details should depend on abstractions.
+Why it is used?
+DIP is used to decouple high-level and low-level components, promoting a more flexible and maintainable codebase.
+It helps in minimizing the impact of changes and makes the system more resilient to modifications.
+
+How it helps?
+By adhering to DIP, you ensure that:
+
+High-level modules are isolated from low-level module changes.
+You can easily extend the system by introducing new low-level modules (implementations) without modifying the high-level modules.
+The system becomes easier to test, as you can inject mocks or stubs for testing purposes.
