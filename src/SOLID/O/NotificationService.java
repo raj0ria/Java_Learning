@@ -2,7 +2,7 @@ package SOLID.O;
 
 /**
  * Benefit
- * The NotificationService class can now be extended to support new notification types without modifying existing code.
+ * The NotificationService class can now be extended to support new Notification types without modifying existing code.
  * This adheres to the OCP, making the system more flexible and maintainable.
  */
 public class NotificationService {

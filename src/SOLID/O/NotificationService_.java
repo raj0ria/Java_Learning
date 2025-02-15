@@ -2,7 +2,7 @@ package SOLID.O;
 
 /**
  * Issue
- * The NotificationService class needs to be modified whenever a new notification type is added, which violates the OCP.
+ * The NotificationService class needs to be modified whenever a new Notification type is added, which violates the OCP.
  */
 public class NotificationService_ {
    public void sendNotification(String username, String type) {

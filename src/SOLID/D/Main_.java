@@ -2,7 +2,7 @@ package SOLID.D;
 
 /**
  * The NotificationService class directly depends on the concrete implementations of EmailNotification and SMSNotification.
- * This violates the DIP because if a new notification type is introduced, the NotificationService class must be modified.
+ * This violates the DIP because if a new Notification type is introduced, the NotificationService class must be modified.
  */
 public class Main_ {
     public static void main(String[] args) {
