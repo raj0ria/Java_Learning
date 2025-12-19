@@ -1,8 +1,13 @@
 package codingProblems.stringproblems;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class ReverseString {
     public static void main(String[] args) {
-        String name = "ABCDE";
+        //String name = "ABCDE";
 
         //System.out.println("Reversed (Recursive): " + reverseRecursive(name));
 //        String reversedName = reverseAString(name);
@@ -11,17 +16,30 @@ public class ReverseString {
 //
 //        System.out.println(reversedName);
 //
-        System.out.println(reverseRecursion("AGRA", ""));
-        System.out.println(reverseIterative("ABCDE"));
+//        System.out.println(reverseRecursion("AGRA", ""));
+//        System.out.println(reverseIterative("ABCDE"));
+
+
+        char[] chars = {'a','b','c'};
+
+        String string = new String(chars);
+
+        Stream<Character> characterStream = string.chars().mapToObj(c -> (char)c);
+
+        List<Character> collect = characterStream.collect(Collectors.toList());
+
+        System.out.println(collect);
+
+        //System.out.println(string);
     }
 
     private static String reverseAString(String name) {
         int len = name.length();
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
         for (int i = len-1; i >=0 ; i--) {
-            reversed += name.charAt(i);
+            reversed.append(name.charAt(i));
         }
-        return reversed;
+        return reversed.toString();
     }
 
     public static String reverseRecursive(String s) {

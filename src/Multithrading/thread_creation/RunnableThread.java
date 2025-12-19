@@ -3,8 +3,6 @@ package Multithrading.thread_creation;
 import java.util.concurrent.TimeUnit;
 
 public class RunnableThread implements Runnable{
-
-
     /**
      * Runs this operation.
      */
